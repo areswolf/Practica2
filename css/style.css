@@ -1,0 +1,266 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.clearfix:after {
+    content: " "; /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.navbar {
+    position: fixed;
+    background-color: #F7F7F7;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+.navbar .navbar-list {
+    list-style-type: none;
+    margin: 0px;
+    float: right;
+    font-size: 0;
+
+}
+.navbar .navbar-list .navbar-item {
+    display: inline-block;
+    font-size: 16px;
+}
+
+.navbar .navbar-list .navbar-item a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px;
+    color: crimson;
+    transition: all 0.4s linear;
+}
+
+.navbar .navbar-list .navbar-item a:hover {
+    color: #F7F7F7;
+    background-color: #A4A4A4;
+}
+
+.navbar .navbar-list .navbar-item.active {
+    color: #F7F7F7;
+    background-color: #A4A4A4;
+}
+
+.title {
+    position: absolute;
+    left: 25%;
+    top: 5%;
+    width: 100%;
+    height: 46%;
+    padding-left: 50px;
+    padding-top: 35px;
+    color: white;
+    background: linear-gradient(0deg, gray, black, #A4A4A4);
+    text-align: left;
+    font-size: 40px;
+}
+
+.title-img {
+    float: left;
+    top: 20%;
+    width: 25%;
+    height: 50vh;
+}
+
+.title-cite {
+    clear: both;
+    color: royalblue;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    background-color: azure;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.about-me {
+    clear: left;
+}
+
+.quien-soy-img {
+    border-radius: 50%;
+    background-color: gray;
+    border: 2px solid black;
+    transition: width 2s ease-in, border-color 2s linear 1s;
+}
+
+.tiger-img {
+    border-radius: 50%;
+    border: 2px solid black;
+    transition: width 2s ease-in, border-color 2s linear 1s;
+
+}
+
+.tiger-img:hover {
+    animation: myAnimation 350ms;
+}
+
+
+@-webkit-keyframes myAnimation {
+    0% { background: white; }
+    25% { transform: rotate(90deg); }
+    50% { transform: rotate(180deg); }
+    75% { transform: rotate(270deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.parrafo-par {
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+.macroenlaces {
+    background-color: black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.fast-info {
+    padding-top: 10px;
+    font-size: 22px;
+    float: left;
+    color: gainsboro;
+    padding-left: 30px;
+
+}
+.fast-img {
+    float:left;
+
+}
+.separador {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.parrafo {
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-justify: auto;
+    /*background-color: mistyrose;*/
+    color: midnightblue;
+}
+.javi-info {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+table {
+    margin-left: 250px;
+    margin-right: 50px;
+    width: 100%;
+    border-collapse: collapse;
+    color: midnightblue;
+}
+
+thead > tr {
+    background-color: #f5f5f5;
+}
+
+th {
+    height: 50px;
+}
+
+
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody > tr:hover {
+    background-color: #dedddd;
+}
+.columna-1 {
+    width: 140px;
+    text-align: left;
+}
+.columna-2 {
+    width: 400px;
+    text-align: center;
+}
+.columna-3 {
+    width: 650px;
+    text-align: left;
+
+}
+.listado {
+    padding-left: 40px;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.92);
+    color: white;
+    height: 50px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.enlace {
+    color: gainsboro;
+}
+
+.contactaconmigo {
+    margin-left: 20px;
+}
+
+.form {
+    padding: 0 20px;
+}
+
+.form .form-row {
+    padding: 10px;
+    padding-left: 40px;
+}
+
+.input {
+    margin-right: 20px;
+    padding-right: 20px;
+}
+
+.radio-button {
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+
+.label-form {
+    color: red;
+
+}
+.hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 0px;
+    float: right;
+}

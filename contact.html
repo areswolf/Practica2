@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Javier Ruiz | CV</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+
+</head>
+
+<body>
+<nav class="navbar">
+    <ul class="navbar-list clearfix">
+        <li class="navbar-item">
+            <a href="index.html">Inicio</a>
+        </li>
+        <li class="navbar-item">
+            <a href="index.html#quien-soy">Quien soy</a>
+        </li>
+        <li class="navbar-item">
+            <a href="index.html#estudios">Estudios</a>
+        </li>
+        <li class="navbar-item">
+            <a href="index.html#experiencia">Experiencia</a>
+        </li>
+        <li class="navbar-item">
+            <a href="index.html#aficiones">Aficiones</a>
+        </li>
+        <li class="navbar-item">
+            <a href="index.html#habilidades">Habilidades</a>
+        </li>
+        <li class="navbar-item active">
+            <a href="contact.html">Contacto</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="container-contacto">
+    <section class="row">
+        <h2 class="contactaconmigo">Contacta conmigo</h2>
+
+        <div class="col-12">
+            <form class="form" name="contact-batman" method="get">
+                <div class="form-row">
+                    <label for="nombre">Nombre:</label>
+                    <input class="input" type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                    <label for="apellidos">Apellidos:</label>
+                    <input class="input" type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                    <label for="email">Email:</label>
+                    <input class="input" type="email" id="email" name="email" placeholder="name@company.com" pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+-[A-Za-z0-9]++_[A-Za-z0-9]+\.[A-Za-z0-9\.]+" required>
+                    <label for="telefono">Número de teléfono</label>
+                    <input class="input" type="number" id="telefono" name="Telefono" maxlength="15" placeholder="+34677889966" required>
+                </div>
+
+                <div class="form-row">
+                    <label class="label-form">CÓMO ME HAS CONOCIDO:</label>
+                    <hr class="hr">
+                    <label for="consulta_1">Por Google</label>
+                    <input class="radio-button" type="radio" id="consulta_1" name="consulta" value="Google" required>
+                    <label for="consulta_2">Por email</label>
+                    <input class="radio-button" type="radio" id="consulta_2" name="consulta" value="Por email" required>
+                    <label for="consulta_3">Por contactos</label>
+                    <input class="radio-button" type="radio" id="consulta_3" name="consulta" value="Por contactos" required>
+                    <label for="consulta_4">Otro...</label>
+                    <input class="radio-button" type="radio" id="consulta_4" name="consulta" value="Otro" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="textarea">Comentarios:</label>
+                    <input type="text" id="textarea" name="Comentarios" maxlength="150" size="100">
+                    <input type="submit" name="Enviar">
+                </div>
+
+                <div class="form-row">
+
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <div class="separador"></div>
+    <footer class="footer">
+        Javier Ruiz &copy; 2016
+    </footer>
+</body>
+</html>
