@@ -26,3 +26,7 @@ for (var i = 0; i < otrosInput.length; i++) {
     });
 }
 
+if (!Modernizr.inputtypes.number) {
+    $.getScript('js/number-polyfill.js');
+}
+
