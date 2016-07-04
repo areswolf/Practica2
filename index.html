@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
     <meta name="robots" content="index,follow,noodp"><!-- All Search Engines -->
     <meta name="googlebot" content="index,follow"><!-- Google Specific -->
     <meta name="generator" content="WebStorm 2016.1.3">
@@ -26,6 +25,7 @@
     <link rel="author" href="misc/humans.txt">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <script src="js/modernizr-custom.js"></script>
 </head>
 <body>
     <header class="header">
@@ -136,35 +136,35 @@
     <section class="macroenlaces">
         <div class="row container">
             <div class="col-2">
-                <div class="javi-photo">
+                <div class="navbar-item">
                     <a href="#quien-soy">
                         <img class="tiger-img" src="images/tiger-161802_960_720.png" alt="Quien soy" width="60%" >
                     </a>
                 </div>
             </div>
             <div class="col-2">
-                <div class="javi-photo">
+                <div class="navbar-item">
                     <a href="#estudios">
                         <img class="tiger-img" src="images/old-books-stacked.jpg" alt="Estudios" width="60%" >
                     </a>
                 </div>
             </div>
             <div class="col-2">
-                <div class="javi-photo">
+                <div class="navbar-item">
                     <a href="#experiencia">
                         <img class="tiger-img" src="images/experiencia.jpg" alt="Experiencia" width="60%" >
                     </a>
                 </div>
             </div>
             <div class="col-2">
-                <div class="javi-photo">
+                <div class="navbar-item">
                     <a href="#aficiones">
                         <img class="tiger-img" src="images/ocio.jpg" alt="Aficiones" width="60%" >
                     </a>
                 </div>
             </div>
             <div class="col-2">
-                <div class="javi-photo">
+                <div class="navbar-item">
                     <a href="#habilidades">
                         <img class="tiger-img" src="images/habilidades.jpg" alt="Habilidades" width="60%" >
                     </a>
@@ -311,8 +311,20 @@
             <h2>Aficiones</h2>
             <Hr>
             <div class="parrafo">
-                <span class="parrafo-par">Entre mis pasiones se encuentran el deporte, la lectura, el cine y viajar. Y por supuesto, la tecnología. Practico de forma activa paddle (tomo clases en la escuela "Gala Leon Academy, www.galaleonacademy.es"), levantamiento de pesas y paseos al aire libre. Leo prácticamente de todo, pero soy coleccionista de comics, con especial gusto por la ciencia ficción y el género negro policiaco. En cine, me gusta prácticamente todo, y no dudo en ir solo a ver una película que me atraiga. Y en cuanto a viajar, creo que es la experiencia vital más importante que puede tener cualquiera, conociendo a otras personas y modos de vida. Es realmente enriquecedor para mi (y para mi inglés).
-                </span>
+                <span class="col-1">Entre mis pasiones se encuentran el deporte, la lectura, el cine, viajar y la tecnología.</span>
+                <span class="col-1">Practico de forma activa paddle, levantamiento de pesas y paseos al aire libre.</span>
+                <span class="col-1">Leo de todo, pero soy coleccionista de comics, en especial la ciencia ficción y el género negro policiaco.</span>
+                <span class="col-1">En cine, me gusta prácticamente todo, y no dudo en ir solo a ver una película que me atraiga.</span>
+                <span class="col-1">Y en cuanto a viajar, creo que es la experiencia vital más importante que puede tener cualquiera.</span>
+                <span class="col-1">Es realmente enriquecedor para mi (y para mi inglés).</span>
+                <div class="col-1 separador"></div>
+                <span class="col-4 secc-video">Y por supuesto, también es afición <strong>MI STARTUP:</strong></span>
+                <div class="separador"></div>
+                <div class="col-6 secc-video">
+                    <video id="video-spartan" width="350" controls>
+                        <source src="video/spartan_intro.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
         </div>
     </section>
@@ -360,4 +372,5 @@
         Javier Ruiz &copy; 2016
     </footer>
 </body>
+<script src="js/menu.js"></script>
 </html>

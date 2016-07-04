@@ -39,8 +39,8 @@
     <section class="row">
         <h2 class="contactaconmigo">Contacta conmigo</h2>
 
-        <div class="col-12">
-            <form class="form" name="contact-batman" method="get">
+        <div class="col-7">
+            <form id="form-contact" class="form" name="contact-javier" method="get">
                 <div class="form-row">
                     <label for="nombre">Nombre:</label>
                     <input class="input" type="text" id="nombre" name="nombre" placeholder="Nombre" required>
@@ -48,26 +48,26 @@
                     <input class="input" type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
                     <label for="email">Email:</label>
                     <input class="input" type="email" id="email" name="email" placeholder="name@company.com" pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+-[A-Za-z0-9]++_[A-Za-z0-9]+\.[A-Za-z0-9\.]+" required>
-                    <label for="telefono">Número de teléfono</label>
+                    <label for="telefono">Teléfono</label>
                     <input class="input" type="number" id="telefono" name="Telefono" maxlength="15" placeholder="+34677889966" required>
                 </div>
 
                 <div class="form-row">
                     <label class="label-form">CÓMO ME HAS CONOCIDO:</label>
                     <hr class="hr">
-                    <label for="consulta_1">Por Google</label>
-                    <input class="radio-button" type="radio" id="consulta_1" name="consulta" value="Google" required>
-                    <label for="consulta_2">Por email</label>
-                    <input class="radio-button" type="radio" id="consulta_2" name="consulta" value="Por email" required>
-                    <label for="consulta_3">Por contactos</label>
-                    <input class="radio-button" type="radio" id="consulta_3" name="consulta" value="Por contactos" required>
-                    <label for="consulta_4">Otro...</label>
-                    <input class="radio-button" type="radio" id="consulta_4" name="consulta" value="Otro" required>
+                    <label for="google">Por Google</label>
+                    <input type="radio" id="google" name="consulta" value="Google" required>
+                    <label for="por-email">Por email</label>
+                    <input type="radio" id="por-email" name="consulta" value="Por email" required>
+                    <label for="contactos">Por contactos</label>
+                    <input type="radio" id="contactos" name="consulta" value="Por contactos" required>
+                    <label for="otro">Otro...</label>
+                    <input type="radio" id="otro" name="consulta" value="Otro..." required>
                 </div>
 
                 <div class="form-row">
                     <label for="textarea">Comentarios:</label>
-                    <input type="text" id="textarea" name="Comentarios" maxlength="150" size="100">
+                    <input type="text" id="textarea" name="Comentarios" maxlength="150" size="50">
                     <input type="submit" name="Enviar">
                 </div>
 
@@ -83,4 +83,5 @@
         Javier Ruiz &copy; 2016
     </footer>
 </body>
+<script src="js/form.js"></script>
 </html>

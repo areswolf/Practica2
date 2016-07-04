@@ -28,7 +28,7 @@ body {
 .navbar .navbar-list {
     list-style-type: none;
     margin: 0px;
-    float: right;
+    float: left;
     font-size: 0;
 
 }
@@ -62,7 +62,7 @@ body {
     width: 100%;
     height: 46%;
     padding-left: 50px;
-    padding-top: 35px;
+    padding-top: 20px;
     color: white;
     background: linear-gradient(0deg, gray, black, #A4A4A4);
     text-align: left;
@@ -86,6 +86,16 @@ body {
     padding-bottom: 20px;
     padding-top: 20px;
 }
+
+.title-cite:hover {
+    animation: myAnimationCite 300ms;
+}
+
+@-webkit-keyframes myAnimationCite {
+    0% { background: white; }
+    100% { font-size: 500% ; }
+}
+
 .about-me {
     clear: left;
 }
@@ -108,7 +118,6 @@ body {
     animation: myAnimation 350ms;
 }
 
-
 @-webkit-keyframes myAnimation {
     0% { background: white; }
     25% { transform: rotate(90deg); }
@@ -116,6 +125,7 @@ body {
     75% { transform: rotate(270deg); }
     100% { transform: rotate(360deg); }
 }
+
 
 .parrafo-par {
     -webkit-transition: all 500ms ease-in-out;
@@ -149,8 +159,7 @@ body {
     margin-top: 10px;
     margin-left: 200px;
     margin-right: 200px;
-    text-justify: auto;
-    /*background-color: mistyrose;*/
+    float: left;
     color: midnightblue;
 }
 .javi-info {
@@ -204,8 +213,6 @@ tbody > tr:hover {
     background-color: rgba(0, 0, 0, 0.92);
     color: white;
     height: 50px;
-    display: flex;
-    display: -webkit-flex;
     align-items: center;
     justify-content: center;
 }
@@ -230,6 +237,7 @@ tbody > tr:hover {
 .input {
     margin-right: 20px;
     padding-right: 20px;
+
 }
 
 .radio-button {
@@ -264,3 +272,10 @@ input[type=button], input[type=submit], input[type=reset] {
     border-radius: 0px;
     float: right;
 }
+
+.secc-video {
+    /*margin-left: 10%;*/
+    float: left;
+
+}
+
