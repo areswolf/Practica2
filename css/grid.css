@@ -9,7 +9,8 @@
 .container-contacto {
     width:100%;
     max-width: 1200px;
-    margin-top: 60px;
+    /*margin-top: 60px;*/
+    margin-top: 25%
 
 }
 

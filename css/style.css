@@ -97,7 +97,11 @@ body {
 }
 
 .about-me {
+    margin-top: 60%;
     clear: left;
+}
+.resto {
+    clear: both;
 }
 
 .quien-soy-img {
@@ -126,6 +130,14 @@ body {
     100% { transform: rotate(360deg); }
 }
 
+@keyframes myAnimation {
+    0% { background: white; }
+    25% { transform: rotate(90deg); }
+    50% { transform: rotate(180deg); }
+    75% { transform: rotate(270deg); }
+    100% { transform: rotate(360deg); }
+}
+
 
 .parrafo-par {
     -webkit-transition: all 500ms ease-in-out;
@@ -136,8 +148,7 @@ body {
 }
 .macroenlaces {
     background-color: black;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 10%;
 }
 .fast-info {
     padding-top: 10px;
@@ -277,5 +288,37 @@ input[type=button], input[type=submit], input[type=reset] {
     /*margin-left: 10%;*/
     float: left;
 
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-left: 50px;
+    padding-top: 50px;
+    color: white;
+    /*background: linear-gradient(0deg, gray, black, #A4A4A4);*/
+    background-color: black;
+    text-align: left;
+    font-size: 40px;
+
+}
+.portada {
+    float: right;
+    margin-right: 25%;
+    margin-top: 5%;
+    padding-left: 15%;
+    /*padding-bottom: 5%;*/
+}
+.lock-img {
+    float: right;
+    width: 20%;
+    padding-top: 10%;
+}
+
+.h3 {
+    color: darkorange;
+    float: left;
+    padding-left: 10%;
 }
 
