@@ -48,8 +48,8 @@ function getElementByIdAndScroll(name) {
 
 function scrollToElement(element) {
     var jump = parseInt(element.getBoundingClientRect().top * .3);
-    document.body.scrollTop += jump;
-    document.documentElement.scrollTop += jump;
+    document.body.scrollTop += jump-15;
+    document.documentElement.scrollTop += jump-15;
 
     if (!element.lastJump || element.lastJump > Math.abs(jump)) {
         element.lastJump = Math.abs(jump);

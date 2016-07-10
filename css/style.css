@@ -70,7 +70,7 @@ body {
 }
 
 .about-me {
-    margin-top: 60%;
+    margin-top: 48%;
     clear: left;
 }
 .resto {
@@ -121,7 +121,8 @@ body {
 }
 .macroenlaces {
     background-color: black;
-    padding-top: 10%;
+    padding-top: 5px;
+
 }
 .fast-info {
     padding-top: 10px;
@@ -273,7 +274,6 @@ input[type=button], input[type=submit], input[type=reset] {
     /*background: linear-gradient(0deg, gray, black, #A4A4A4);*/
     background-color: black;
     text-align: left;
-    font-size: 40px;
 
 }
 .portada {
@@ -281,7 +281,7 @@ input[type=button], input[type=submit], input[type=reset] {
     margin-right: 25%;
     margin-top: 5%;
     padding-left: 15%;
-    /*padding-bottom: 5%;*/
+    font-size: 20px;
 }
 .lock-img {
     float: right;
@@ -289,10 +289,11 @@ input[type=button], input[type=submit], input[type=reset] {
     padding-top: 10%;
 }
 
-.h3 {
+.h4 {
     color: darkorange;
     float: left;
     padding-left: 10%;
+    font-size: xx-large;
 }
 
 .img-javier {
