@@ -1,3 +1,4 @@
+
 * {
     margin: 0px;
     padding: 0px;
@@ -69,10 +70,6 @@ body {
     font-size: 40px;
 }
 
-.about-me {
-    margin-top: 48%;
-    clear: left;
-}
 .resto {
     clear: both;
 }
@@ -120,10 +117,22 @@ body {
     transition: all 500ms ease-in-out;
 }
 .macroenlaces {
-    background-color: black;
-    padding-top: 5px;
+    background-color: rgba(1,1,1,0);
+    padding-top: 50px;
+
 
 }
+
+.header-img {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/fondo.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
 .fast-info {
     padding-top: 10px;
     font-size: 22px;
@@ -140,6 +149,18 @@ body {
     padding-bottom: 10px;
     padding-top: 10px;
 }
+
+.separador-2 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.separador-1 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 650px
+
+}
 .parrafo {
     margin-top: 10px;
     margin-left: 200px;
@@ -153,7 +174,7 @@ body {
 }
 
 table {
-    margin-left: 250px;
+    margin-left: 200px;
     margin-right: 50px;
     width: 100%;
     border-collapse: collapse;
@@ -200,11 +221,9 @@ tbody > tr:hover {
     height: 50px;
     align-items: center;
     justify-content: center;
+
 }
 
-.enlace {
-    color: gainsboro;
-}
 
 .contactaconmigo {
     margin-left: 20px;
@@ -215,7 +234,7 @@ tbody > tr:hover {
 }
 
 .form .form-row {
-    padding: 10px;
+    padding: 7px;
     padding-left: 40px;
 }
 
@@ -266,23 +285,105 @@ input[type=button], input[type=submit], input[type=reset] {
 
 .header {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    padding-left: 50px;
-    padding-top: 50px;
+    width: 100vw;
+    height: 100vh;
     color: white;
-    /*background: linear-gradient(0deg, gray, black, #A4A4A4);*/
-    background-color: black;
-    text-align: left;
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+}
+.separador-linea {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #111, #333, #111);
+}
+
+.separador-linea-2 {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #111, #333, #111);
+    margin-bottom: 10px;
+}
+
+.email-area {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.email-label {
+    margin-right: 18px;
+}
+
+.label-nombre {
+    margin-right: 3px;
+}
+
+.label-telefono {
+    margin-right: 8px;
 
 }
-.portada {
+
+.submit-button {
     float: right;
-    margin-right: 25%;
-    margin-top: 5%;
-    padding-left: 15%;
-    font-size: 20px;
 }
+
+.portada {
+    padding-top: 90px;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+.links-contacto {
+    padding-top: 50px;
+}
+
+.enlaces-cotacto {
+    max-width: 60vw;
+
+}
+
+.enlaces-cotacto-2 {
+    margin-left: 300px;
+    width: 600px;
+}
+
+.fila-conntacto:hover {
+    background-color: orangered;
+}
+
+.fila-conntacto2:hover {
+    background-color: rgba(0,0,0,0);
+}
+
+.foto-quien-soy {
+    max-width: 100px;
+    float: left;
+    padding: 5px 5px 5px 5px;
+}
+
+.nombre {
+    font-weight: bold;
+}
+
+.enlace {
+    color: gainsboro;
+}
+
+.enlace2:hover {
+    color: midnightblue;
+}
+
+.enlace2 {
+    color: black;
+}
+
+.enlace:hover {
+    color: midnightblue;
+}
+
+#num-palabras {
+    color: lightseagreen;
+}
+
 .lock-img {
     float: right;
     width: 20%;

@@ -15,6 +15,7 @@ for (var i = 0; i < navbarItems.length; i++){
         }
 
         var sectionToGo = this.getElementsByTagName('a')[0].href.split('#');
+        //debugger;
 
         if(sectionToGo.length > 1) {
             evt.preventDefault();
@@ -24,16 +25,6 @@ for (var i = 0; i < navbarItems.length; i++){
     });
 }
 
-function deleteActiveClass() {
-    for(var i = 0; i < navbarItems.length; i++){
-        if (Modernizr.classList) {
-            navbarItems[i].classList.remove('active');
-            navbarItems[i].classList.remove('active-reverse');
-        } else {
-            navbarItems[i].className = 'navbar-item';
-        }
-    }
-}
 
 function getElementByIdAndScroll(name) {
     var elem;
@@ -47,18 +38,29 @@ function getElementByIdAndScroll(name) {
 }
 
 function scrollToElement(element) {
-    var jump = parseInt(element.getBoundingClientRect().top * .3);
-    document.body.scrollTop += jump-15;
-    document.documentElement.scrollTop += jump-15;
-
+    var jump = (parseInt(element.getBoundingClientRect().top * .3)-20);
+    document.body.scrollTop = document.body.scrollTop + jump;
+    document.documentElement.scrollTop = document.documentElement.scrollTop + jump;
+    //document.body.scrollTop += jump-15;
+    //document.documentElement.scrollTop += jump-15;
     if (!element.lastJump || element.lastJump > Math.abs(jump)) {
         element.lastJump = Math.abs(jump);
-
         setTimeout(function() {
             scrollToElement(element);
         }, "60");
 
     } else {
         element.lastJump = null;
+    }
+}
+
+function deleteActiveClass() {
+    for(var i = 0; i < navbarItems.length; i++){
+        if (Modernizr.classList) {
+            navbarItems[i].classList.remove('active');
+            navbarItems[i].classList.remove('active-reverse');
+        } else {
+            navbarItems[i].className = 'navbar-item';
+        }
     }
 }

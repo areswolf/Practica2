@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/grid.css">
-    <script src="js/jquery-3.0.0.js"></script>
+    <!--<script src="js/jquery-3.0.0.js"></script>-->
     <script src="js/modernizr-custom.js"></script>
 
 </head>
 
 <body>
-<nav class="navbar">
+    <nav class="navbar">
     <ul class="navbar-list clearfix">
         <li class="navbar-item">
             <a href="index.html">Inicio</a>
@@ -37,8 +37,7 @@
     </ul>
 </nav>
 
-<div class="container-contacto">
-    <section class="row">
+    <section class="container-contacto row">
         <h2 class="contactaconmigo">Contacta conmigo</h2>
         <div class="col-3 clearfix">
             <img class="img-javier" src="images/Javier.jpg" alt="Javier Ruiz">
@@ -46,19 +45,21 @@
         <div class="col-7">
             <form id="form-contact" class="form" name="contact-javier" method="get">
                 <div class="form-row">
-                    <label for="nombre">Nombre:</label>
+                    <label class="label-nombre" for="nombre">Nombre:</label>
                     <input class="input" type="text" id="nombre" name="nombre" placeholder="Nombre" required>
                     <label for="apellidos">Apellidos:</label>
                     <input class="input" type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
-                    <label for="email">Email:</label>
-                    <input class="input" type="email" id="email" name="email" placeholder="name@company.com" pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+-[A-Za-z0-9]++_[A-Za-z0-9]+\.[A-Za-z0-9\.]+" required>
-                    <label for="telefono">Teléfono</label>
-                    <input class="input" type="number" id="telefono" name="Telefono" maxlength="15" placeholder="+34677889966" required>
+                    <div class="email-area">
+                        <label class="email-label" for="email">Email:</label>
+                        <input class="input" type="email" id="email" name="email" placeholder="name@company.com" pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+-[A-Za-z0-9]++_[A-Za-z0-9]+\.[A-Za-z0-9\.]+" required>
+                        <label class="label-telefono" for="telefono">Teléfono:</label>
+                        <input class="input" type="number" id="telefono" name="Telefono" maxlength="15" placeholder="+34677889966" required>
+                    </div>
                 </div>
 
                 <div class="form-row">
                     <label class="label-form">CÓMO ME HAS CONOCIDO:</label>
-                    <hr class="hr">
+                    <div class="separador-linea-2"></div>
                     <label for="google">Por Google</label>
                     <input type="radio" id="google" name="consulta" value="Google" required>
                     <label for="por-email">Por email</label>
@@ -70,19 +71,72 @@
                 </div>
 
                 <div class="form-row">
-                    <label for="textarea">Comentarios:</label>
+                    <label id="100palabras" for="textarea">Comentarios: 150 palabras</label>
                     <input type="text" id="textarea" name="Comentarios" maxlength="150" size="50">
-                    <input type="submit" name="Enviar">
+                    <input class="submit-button" type="submit" name="Enviar">
                 </div>
-
+                <div class="form-row"></div>
                 <div class="form-row">
-
+                    <div class="separador-linea-2"></div>
                 </div>
             </form>
         </div>
+        <table class="enlaces-cotacto enlaces-cotacto-2">
+            <tbody>
+            <tr class="fila-conntacto2">
+                <td>
+                    <a href="tel:+34677580032">
+                        <img class="small-img" src="images/tel.png" alt="Telefono" width="40px" height="40px">
+                    </a>
+                </td>
+                <td>
+                    <div id="vinc" class="fast-info">
+                        <h6><a class="enlace2" href="tel:+34677580032">+34 677 580 032</a></h6>
+                    </div>
+                </td>
+            </tr>
+            <tr class="fila-conntacto2">
+                <td>
+                    <a href="https://es.linkedin.com/in/francisco-javier-ruiz-de-la-peña-91162243">
+                        <img class="small-img" src="images/ln.png" alt="Linkedn" width="38px" height="38px">
+                    </a>
+                </td>
+                <td>
+                    <div id="vinc1" class="fast-info">
+                        <h6><a class="enlace2" href="https://es.linkedin.com/in/francisco-javier-ruiz-de-la-peña-91162243">Javier Ruiz</a></h6>
+                    </div>
+                </td>
+            </tr>
+            <tr class="fila-conntacto2">
+                <td>
+                    <a href="mailto:jruiz@spartan-sys.com">
+                        <img class="small-img" src="images/mail.png" alt="E-Mail" width="40px" height="40px">
+                    </a>
+                </td>
+                <td>
+                    <div id="vinc3" class="fast-info">
+                        <h6><a class="enlace2" href="mailto:jruiz@spartan-sys.com">jruiz@spartan-sys.com</a></h6>
+                    </div>
+                </td>
+            </tr>
+            <tr class="fila-conntacto2">
+                <td>
+                    <a href="https://www.google.es/maps/place/Calle+Alto+de+la+Cabrera,+26,+19209+Villanueva+de+la+Torre,+Guadalajara">
+                        <img class="small-img" src="images/location-512.png" alt="Dirección" width="40px" height="40px">
+                    </a>
+                </td>
+                <td>
+                    <div id="vinc4"  class="fast-info">
+                        <h6><a class="enlace2" href="https://www.google.es/maps/place/Calle+Alto+de+la+Cabrera,+26,+19209+Villanueva+de+la+Torre,+Guadalajara">C/Alto de la Cabrera, 26, Villanueva de la Torre</a></h6>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
     </section>
 
     <div class="separador"></div>
+
     <footer class="footer">
         Javier Ruiz &copy; 2016
     </footer>

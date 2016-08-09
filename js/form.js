@@ -12,6 +12,7 @@ inputOtros.setAttribute("name", "otros");
 inputOtros.setAttribute("placeholder", "Como me has conocido");
 inputOtros.setAttribute("required", "");
 inputOtros.setAttribute("size", "80");
+inputOtros.setAttribute("class", "email-area");
 
 
 for (var i = 0; i < otrosInput.length; i++) {
@@ -25,6 +26,31 @@ for (var i = 0; i < otrosInput.length; i++) {
         }
     });
 }
+
+var comentario = document.getElementsByName("Comentarios");
+
+comentario[0].addEventListener('keyup', function () {
+    var cad = comentario[0].value;
+    var labelStr = document.getElementById("100palabras");
+    var aux = "";
+    var entrada = cad.split(' ');
+    labelStr.innerHTML = "Comentarios: <span id='num-palabras'> " + String(150-entrada.length) + "</span> palabras";
+
+    if (cad) {
+        if (entrada.length>150) {
+            alert("Máximo 150 palabras");
+            for (var i=0; i<150; i++) {
+                aux = aux + entrada[i] + " " ;
+            }
+            comentario[0].value = aux;
+        }
+    }
+
+});
+//debugger;
+
+cad = comentario[0].text;
+
 
 if (!Modernizr.inputtypes.number) {
     $.getScript('js/number-polyfill.js');
