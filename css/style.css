@@ -337,7 +337,7 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 
 .enlaces-cotacto {
-    max-width: 60vw;
+    max-width: 40vw;
 
 }
 
@@ -348,6 +348,7 @@ input[type=button], input[type=submit], input[type=reset] {
 
 .fila-conntacto:hover {
     background-color: orangered;
+
 }
 
 .fila-conntacto2:hover {

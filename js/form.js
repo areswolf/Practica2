@@ -32,6 +32,16 @@ var comentario = document.getElementsByName("Comentarios");
 comentario[0].addEventListener('keyup', function () {
     var cad = comentario[0].value;
     var labelStr = document.getElementById("100palabras");
+
+    //  Pre-proceso de cad para eliminar espacios al principio, al final y seguidos
+    firstBlank = /^ /;
+    lastBlank = / $/;
+    someBlanks = /[ ]+/g;
+
+    cad = cad.replace(someBlanks," ");
+    cad = cad.replace(firstBlank,"");
+    cad = cad.replace(lastBlank,"");
+
     var aux = "";
     var entrada = cad.split(' ');
     labelStr.innerHTML = "Comentarios: <span id='num-palabras'> " + String(150-entrada.length) + "</span> palabras";
