@@ -54,6 +54,7 @@ comentario[0].addEventListener('keyup', function () {
             }
             comentario[0].value = aux;
         }
+
     }
 
 });
